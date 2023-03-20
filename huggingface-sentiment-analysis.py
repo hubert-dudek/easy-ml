@@ -20,7 +20,7 @@ def sentiment_udf(v: pd.Series) -> pd.Series:
 
 df = df.withColumn('sentiment', sentiment_udf(df.message))
 
-display(df)
+display(df) 
 
 # COMMAND ----------
 
